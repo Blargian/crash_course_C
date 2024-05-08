@@ -1,6 +1,6 @@
 # Day 5 - Understanding C Strings
 
-In C, strings are really just arrays of characters with one caveat - there is an extra character at the end of a C-string which is the character `\0` (a null string).
+In C, strings are really just arrays of characters with one caveat - there is an extra character at the end of a C-string which is the character `\0` (a null character).
 
 ## Standard functions
 
