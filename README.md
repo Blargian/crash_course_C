@@ -7,6 +7,8 @@ Notes and code made while working through Mike Shah's [C Programming Series](htt
 - [Day 5 - Understanding C String](c_programming/day_5/day_5.md)
 - [Day 6 - Main function arguments and char**](c_programming/day_6/day_6.md)
 - [Day 7 - Pointers are not arrays, and 2D arrays](c_programming/day_7/day_7.md)
+- [Day 8 - Function pointers](c_programming/day_8/day_8.md)
+- [Day 9 - Object Orientated Programming in C](c_programming/day_9/day_9.md)
 
 ## C++ Programming Series
 
