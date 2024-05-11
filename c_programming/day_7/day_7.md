@@ -94,4 +94,102 @@ int array2[4] = parray2; // throws an invalid initializer compiler error
 
  ## Two dimensional array
 
+2D (multidimensional) arrays are still contiguous blocks of memory. 
 
+```
+   pitch
+<--------> 
+[][][][][] ↑
+[][][][][] |
+[][][][][] |
+[][][][][] ↓
+
+// is the same as:
+
+   pitch
+<-------->
+[][][][][][][][][][][][][][][][][][][][]
+```
+
+- `pitch`: the array width (how many columns)
+  
+Syntax:
+
+```c
+int array2D[0][1]
+```
+
+Example:
+
+```c
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+    int counter=0;
+    int array2D[5][4];
+    for (int i=0; i<5; i++)
+    {
+        for (int j=0; j<4; j++)
+        {
+            array2D[i][j] = counter++;
+            printf("%d ", array2D[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+```
+
+Accessing 2D with pointers:
+
+```
+Select element at [i,j] : [ith_row*number_of_elements_in_a_column + jth_element]
+```
+
+**You can pass a 2D (3D, 4D etc) array into a function in C, but the second (and any further dimensions) need to be fixed. Typically, it's more common to pass in a pointer to a 1D array and then do the conversion to 2D or to 3D etc: **
+
+```c
+int* array2D = (int*)malloc(sieof(int)*5*4);
+```
+
+Example:
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+void print2DArrayWithPointer(int* array, int rows, int cols)
+{
+    for (int i=0; i<rows; i++)
+    {
+        for(int j=0; j<cols; j++)
+        {
+            printf("%d\t", array[i*cols+j]);
+        }
+        printf("\n");
+    }
+}
+
+int main(int argc, char** argv)
+{
+    const int rows = 5;
+    const int cols = 4;
+    int counter = 0;
+    int* array2D = (int*)malloc(sizeof(int)*rows*cols);
+    for (int i=0; i<rows; i++)
+    {
+        for (int j=0; j<cols; j++)
+        {
+            array2D[cols*i + j] = counter++;
+            printf("%d ", array2D[cols*i + j]);
+        }
+        printf("\n");
+    }
+
+    // Print 2D array with function defined above
+    print2DArrayWithPointer(array2D, 5, 4);
+    free(array2D);
+    return 0;
+}
+```
