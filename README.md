@@ -18,6 +18,7 @@ Notes and code made while working through Mike Shah's [C Programming Series](htt
   - [operator overloading](c++_programming/3_classes/6_operator_overloading.md)
   - [member initializer lists](c++_programming/3_classes/7_member_initializer_lists.md)
   - [structs](c++_programming/3_classes/8_struct.md)
+  - [RAII (Resource Acquisition Is Initialization)](c++_programming/3_classes/9_RAII.md)
 ### Level 4
 ### Level 5
 ### Level 6
