@@ -32,6 +32,10 @@ Notes and code made while working through Mike Shah's [C Programming Series](htt
 
 ## Design Patterns Series
 
+### Creational
+### Structural
+### Behavioural
+
 ## Notes on compiling
 
 You can compile any of the `main.c` files in this repository from the command line by `cd`ing to the folder you want and using:
