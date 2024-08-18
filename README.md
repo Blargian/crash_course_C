@@ -21,6 +21,7 @@ Notes and code made while working through Mike Shah's [C Programming Series](htt
   - [RAII (Resource Acquisition Is Initialization)](c++_programming/3_classes/9_RAII.md)
   - [Rule of Five (Reducing allocations)](c++_programming/3_classes/10_rule_of_five.md)
   - [friend functions (avoid)](c++_programming/3_classes/11_friend_functions.md)
+  - [explicit constructor](c++_programming/3_classes/12_explicit_ctor.md)
 ### Level 4
 ### Level 5
 ### Level 6
